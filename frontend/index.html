@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task manager</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="script_item.js" defer>
+        </script>
+    </head>
+    <body onload="getStudent_id()">
+        <div class="info-div">
+            <p>student id : <span id="student-task-id"></span></p>
+        </div>
+        <section>
+            <header align="center">
+                <table style="width: 94%;" class="title-table" align="center">
+                    <tr>
+                        <td><h1 class="section-title">TASK MANAGER</h1></td>
+                    </tr>
+                </table>
+            
+            
+            </header>
+
+
+            <div class="content-container">
+                <table class="main-table" >
+                    <thead>
+                        <tr class="div_grid">
+                            <th>Task name</th>
+                            <th>Status</th>
+                            <th>Deadline</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body">
+                    </tbody>
+                    <tfoot>
+                        <tr id="newrow-form" class="div_grid">
+                            <td><input id="item-to-add" type="text"/></td>
+                            <td>
+                                <select id="name-to-add">
+                                </select>
+                            </td>
+                            <td><input id="price-to-add" type="number"/></td>
+                            <td><button id="add-newrow" onclick=addItem()>new</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <div>
+                    All Assignment
+                </div>
+                <div class="grid-content">
+                    <div>
+                        Year    
+                    </div>
+                    <div>
+                        Subject
+                    </div>
+                    <div>
+                        semester
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <select id = "year-section" class="select-contro-button">
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <select id = "course-dropdown" class="select-contro-button">   
+                    </select>
+                    <select id="semister-dropdown" class="select-contro-button">
+                        <option value="1"> 1 semester</option>
+                        <option value="2"> 2 semester</option>
+                        <option value="3"> 3 semester</option>
+                    </select>
+                    <button onclick="getallcourse_in_thisyear()" class="table-contro-button">
+                        getallcourse
+                    </button>
+                    <button onclick="createAssignmentTable()" class="table-contro-button">
+                        getallassignment
+                    </button>
+                </div>
+
+                <table class="main-table">
+                    <thead>
+                        <tr id="main-table-head">
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>outdate</th>
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body-course">
+                        <tr id=0>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+    
+            
+        </section>
+        <footer class="section-center">
+            <div class="info-div">
+                <button class="button login-button" onclick=authorizeApplication()>Login</button>
+                <button class="button logout-button" onclick=logout()>Logout</button>
+            </div>
+             
+        </footer>
+
+    </body>
+</html>

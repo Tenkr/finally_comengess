@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Inter:wght@600;700;800&display=swap');
+
+:root {
+  --standard-border-radius: 8px;
+}
+
+body {
+  margin: 20px;
+  font-family: "Inter", sans-serif;
+  background: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#app-name {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  margin: 50px 0;
+}
+
+.section-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin: 10px 0px;
+
+}
+
+.title-table {
+  border: 4px solid #9067f9;
+  border-radius: 8px;
+}
+
+.title-table td {
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: #9067f9;
+}
+
+.section-subtitle {
+  font-size: 1.1em;
+}
+.section-center {
+  text-align: center;
+}
+.section-credit {
+  text-align: center;
+  font-size: 1.1em;
+}
+.section-right {
+  text-align: right;
+}
+.section-left {
+  text-align: left;
+}
+
+.description {
+  text-align: center;
+  color: rgb(0, 2, 107);
+}
+
+.info {
+  font-size: 1em;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 5px 5px;
+  border: 1px solid #aaa;
+  background: white;
+  cursor: pointer;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  width: fit-content;
+}
+.button:hover {
+  background: rgb(255, 200, 105);
+  color: white;
+}
+.logout-button:hover {
+  background: rgb(204, 19, 19);
+  color: white;
+}
+.change-page-button:hover {
+  background: rgb(94, 127, 236);
+  color: white;
+}
+
+.main-table {
+  margin: 30px 0px;
+  padding: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, white,#9067f9);
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.main-table > thead {
+  background: #9067f9;
+  color: white;
+}
+.main-table > thead > tr > th {
+  text-align: left;
+}
+.main-table td,
+.main-table th {
+  padding: 5px 10px;
+  font-size: 1em;
+}
+.main-table input,
+.main-table select,
+#name-to-add-2{
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+}
+.main-table button {
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  width: 60px;
+  cursor: pointer;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+}
+.main-table button:hover {
+  background: rgb(255, 200, 105);
+  color: white;
+}
+
+.delete-button{
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  width: 120px;
+  cursor: pointer;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+}
+.delete-button:hover {
+  background: rgb(255, 200, 105);
+  color: white;
+}
+
+.div_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+}
+.complete{
+  width: 300px;
+}
+.content-container{
+  background-image: linear-gradient(to right, #6ceade,white);
+  border-radius: 8px; 
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.table-contro-button{
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  width: 200px;
+  cursor: pointer;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+}
+.table-contro-button:hover{
+  background: rgb(255, 200, 105);
+  color: white;
+}
+.select-contro-button{
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-family: "Mitr", sans-serif;
+  font-size: 1em;
+}
+.grid-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 10px;
+ 
+}
+.info-div{
+  background-color: white;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 .4rem .8rem #9067f9;
+  border-radius: .8rem;
+  margin-left: 600px;
+  margin-right: 600px;
+  padding: 10px;
+  
+
+}
+.margin-fix{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
